@@ -3,86 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Skycrawler — Digital solutions, marketing, customer support, and elevator & lift solutions." />
-  <meta name="theme-color" content="#08111f" />
-  <title>Skycrawler | Digital Solutions for Everything</title>
+  <meta name="description" content="Sky Crawler provides Recruitment, HR, Customer Support, Sales Support and Marketing outsourcing solutions for startups, SMEs and growing businesses." />
+  <meta name="keywords" content="Sky Crawler, recruitment, HR solutions, customer support, sales support, lead generation, outsourcing, BPO, Delhi NCR" />
+  <meta name="theme-color" content="#06111f" />
+  <meta property="og:title" content="Sky Crawler | Business Support & Outsourcing Solutions" />
+  <meta property="og:description" content="Recruitment, HR, Customer Support, Sales Support and Marketing solutions for growing businesses." />
+  <meta property="og:type" content="website" />
+  <title>Sky Crawler | Business Support & Outsourcing Solutions</title>
   <style>
     :root{
-      --bg:#07111f; --bg2:#0b1728; --card:#101e31; --text:#f7fbff;
-      --muted:#9fb0c5; --line:rgba(255,255,255,.10);
-      --accent:#67e8f9; --accent2:#818cf8; --white:#fff;
-      --max:1160px; --radius:22px;
+      --bg:#06111f; --bg2:#0a1930; --card:rgba(255,255,255,.045);
+      --text:#f7fbff; --muted:#9fb0c5; --line:rgba(255,255,255,.10);
+      --accent:#62e8ff; --accent2:#6574ff; --white:#fff;
+      --max:1180px; --radius:22px; --shadow:0 24px 80px rgba(0,0,0,.28);
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
-      radial-gradient(circle at 80% 10%,rgba(99,102,241,.22),transparent 28%),
-      radial-gradient(circle at 15% 20%,rgba(34,211,238,.12),transparent 25%),var(--bg);
-      color:var(--text);line-height:1.6}
+    body{
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at 82% 7%,rgba(101,116,255,.20),transparent 27%),
+        radial-gradient(circle at 8% 25%,rgba(98,232,255,.10),transparent 24%),
+        linear-gradient(180deg,#06111f 0%,#081526 48%,#06111f 100%);
+      color:var(--text); line-height:1.65; overflow-x:hidden;
+    }
     a{color:inherit;text-decoration:none}
     .container{width:min(92%,var(--max));margin:auto}
-    header{position:sticky;top:0;z-index:50;background:rgba(7,17,31,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-size:1.45rem;font-weight:850;letter-spacing:-.04em}
-    .logo span{color:var(--accent)}
-    .navlinks{display:flex;gap:28px;align-items:center;color:#c7d3e2;font-size:.94rem}
-    .navlinks a:hover{color:var(--white)}
-    .nav-cta{padding:11px 18px;border:1px solid rgba(103,232,249,.35);border-radius:999px;color:var(--white)}
-    .menu{display:none;background:none;border:0;color:#fff;font-size:1.5rem}
-    .hero{padding:105px 0 80px;min-height:680px;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;color:#b9c8db;font-size:.82rem;margin-bottom:22px}
+    header{
+      position:sticky;top:0;z-index:50;background:rgba(6,17,31,.82);
+      backdrop-filter:blur(18px);border-bottom:1px solid var(--line)
+    }
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.04em}
+    .brand img{width:45px;height:45px;border-radius:12px;object-fit:cover;object-position:center;border:1px solid rgba(98,232,255,.28);box-shadow:0 8px 25px rgba(0,0,0,.25)}
+    .brand-text{font-size:1.35rem}.brand-text span{color:var(--accent)}
+    .navlinks{display:flex;gap:25px;align-items:center;color:#c7d3e2;font-size:.94rem}
+    .navlinks a:hover{color:#fff}
+    .nav-cta{padding:11px 18px;border:1px solid rgba(98,232,255,.35);border-radius:999px;background:rgba(98,232,255,.06);color:#fff}
+    .menu{display:none;background:none;border:0;color:#fff;font-size:1.55rem}
+    .hero{
+      padding:95px 0 80px;min-height:710px;display:grid;grid-template-columns:1.12fr .88fr;
+      gap:55px;align-items:center
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid var(--line);
+      background:rgba(255,255,255,.035);border-radius:999px;color:#bfd0e4;font-size:.82rem;margin-bottom:22px
+    }
     .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
-    h1{font-size:clamp(3rem,6vw,5.7rem);line-height:.98;letter-spacing:-.065em;max-width:760px}
+    h1{font-size:clamp(3rem,6.2vw,5.8rem);line-height:.98;letter-spacing:-.068em;max-width:790px}
     .gradient{background:linear-gradient(90deg,var(--accent),#a78bfa 65%,#fff);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .hero p{margin-top:25px;color:var(--muted);font-size:1.1rem;max-width:650px}
+    .hero p{margin-top:25px;color:var(--muted);font-size:1.1rem;max-width:680px}
+    .service-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:23px}
+    .pill{padding:7px 11px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;color:#c9d7e7;font-size:.79rem}
     .buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:13px;font-weight:750;border:1px solid var(--line);transition:.2s}
-    .btn-primary{background:linear-gradient(135deg,var(--accent2),#4f46e5);border-color:transparent}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:13px;
+      font-weight:800;border:1px solid var(--line);transition:.2s
+    }
+    .btn-primary{background:linear-gradient(135deg,var(--accent2),#4f46e5);border-color:transparent;box-shadow:0 12px 30px rgba(79,70,229,.22)}
     .btn-secondary{background:rgba(255,255,255,.035)}
     .btn:hover{transform:translateY(-2px)}
-    .hero-card{position:relative;padding:28px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));box-shadow:0 30px 100px rgba(0,0,0,.25);overflow:hidden}
-    .hero-card:before{content:"";position:absolute;width:220px;height:220px;background:var(--accent2);filter:blur(90px);opacity:.25;right:-80px;top:-80px}
-    .screen{border:1px solid var(--line);border-radius:18px;background:#091525;padding:20px;position:relative}
-    .screen-top{display:flex;gap:7px;margin-bottom:22px}.bubble{width:9px;height:9px;border-radius:50%;background:#6b7a8f}
-    .metric{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-    .metric div{padding:17px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.035)}
-    .metric b{display:block;font-size:1.5rem}.metric small{color:var(--muted)}
-    .bars{height:125px;margin-top:14px;display:flex;align-items:end;gap:8px}.bar{flex:1;border-radius:7px 7px 2px 2px;background:linear-gradient(to top,var(--accent2),var(--accent));opacity:.85}
-    section{padding:95px 0}
-    .section-head{max-width:720px;margin-bottom:45px}.kicker{color:var(--accent);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.14em}
-    h2{font-size:clamp(2.1rem,4vw,3.4rem);line-height:1.05;letter-spacing:-.045em;margin-top:10px}
+    .hero-card{
+      position:relative;padding:18px;border:1px solid var(--line);border-radius:30px;
+      background:linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025));
+      box-shadow:var(--shadow);overflow:hidden
+    }
+    .hero-card:before{
+      content:"";position:absolute;width:260px;height:260px;background:var(--accent2);
+      filter:blur(100px);opacity:.22;right:-100px;top:-100px
+    }
+    .logo-visual{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#071525}
+    .logo-visual img{width:100%;display:block;aspect-ratio:1.22/1;object-fit:cover;object-position:center}
+    .visual-caption{
+      position:absolute;left:18px;right:18px;bottom:18px;padding:16px 18px;border-radius:16px;
+      background:rgba(5,14,27,.78);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.10)
+    }
+    .visual-caption b{display:block;font-size:1.1rem}.visual-caption span{color:#aebed0;font-size:.86rem}
+    section{padding:100px 0}
+    .section-head{max-width:760px;margin-bottom:45px}
+    .kicker{color:var(--accent);font-weight:850;font-size:.78rem;text-transform:uppercase;letter-spacing:.15em}
+    h2{font-size:clamp(2.15rem,4vw,3.45rem);line-height:1.05;letter-spacing:-.05em;margin-top:10px}
     .section-head p{color:var(--muted);margin-top:16px;font-size:1.04rem}
     .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .card{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.035);transition:.25s}
-    .card:hover{transform:translateY(-5px);border-color:rgba(103,232,249,.3)}
-    .icon{font-size:1.7rem;margin-bottom:24px}.card h3{font-size:1.12rem}.card p{color:var(--muted);font-size:.92rem;margin-top:9px}
-    .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
-    .about-panel{padding:35px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(129,140,248,.13),rgba(103,232,249,.04))}
-    .about-panel h3{font-size:1.7rem;line-height:1.2}.about-panel p{color:var(--muted);margin-top:15px}
-    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.check{color:#d9e5f3;font-size:.92rem}.check:before{content:"✓";color:var(--accent);font-weight:900;margin-right:8px}
-    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{position:relative}.number{font-size:3.5rem;font-weight:900;letter-spacing:-.07em;color:rgba(255,255,255,.12)}
-    .step h3{margin-top:-7px}.step p{color:var(--muted);margin-top:8px}
-    .cta{padding:65px;border-radius:30px;border:1px solid var(--line);background:linear-gradient(120deg,rgba(99,102,241,.25),rgba(34,211,238,.08));display:flex;justify-content:space-between;gap:25px;align-items:center}
-    .cta p{color:#c0cedd;margin-top:8px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .card{
+      padding:27px;border:1px solid var(--line);border-radius:var(--radius);
+      background:rgba(255,255,255,.035);transition:.25s;min-height:280px
+    }
+    .card:hover{transform:translateY(-5px);border-color:rgba(98,232,255,.32);box-shadow:0 18px 45px rgba(0,0,0,.16)}
+    .icon{font-size:1.8rem;margin-bottom:23px}.card h3{font-size:1.14rem}.card p{color:var(--muted);font-size:.91rem;margin-top:10px}
+    .card ul{list-style:none;margin-top:17px;color:#c9d7e7;font-size:.85rem}.card li{margin:7px 0}.card li:before{content:"✓";color:var(--accent);font-weight:900;margin-right:8px}
+    .split{display:grid;grid-template-columns:.92fr 1.08fr;gap:55px;align-items:center}
+    .panel{padding:35px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(101,116,255,.14),rgba(98,232,255,.045))}
+    .panel h3{font-size:1.8rem;line-height:1.2}.panel p{color:var(--muted);margin-top:15px}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}
+    .check{color:#d9e5f3;font-size:.92rem}.check:before{content:"✓";color:var(--accent);font-weight:900;margin-right:8px}
+    .audience{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .audience-card{padding:25px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
+    .audience-card h3{font-size:1.05rem}.audience-card p{color:var(--muted);font-size:.9rem;margin-top:8px}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{position:relative}.number{font-size:3.5rem;font-weight:900;letter-spacing:-.07em;color:rgba(255,255,255,.12)}
+    .step h3{margin-top:-7px}.step p{color:var(--muted);margin-top:8px;font-size:.92rem}
+    .cta{
+      padding:65px;border-radius:30px;border:1px solid var(--line);
+      background:linear-gradient(120deg,rgba(99,102,241,.24),rgba(34,211,238,.08));
+      display:flex;justify-content:space-between;gap:25px;align-items:center
+    }
+    .cta p{color:#c0cedd;margin-top:8px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
     form,.contact-info{padding:30px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.035)}
     label{display:block;color:#c7d3e2;font-size:.88rem;margin-bottom:7px;margin-top:15px}
-    input,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#081321;color:#fff;outline:none;font:inherit}
-    textarea{min-height:130px;resize:vertical} input:focus,textarea:focus{border-color:rgba(103,232,249,.6)}
-    .contact-info h3{font-size:1.5rem}.contact-info p{color:var(--muted);margin-top:10px}.contact-item{margin-top:24px}.contact-item small{color:var(--muted);display:block}.contact-item strong{font-size:1rem}
+    input,select,textarea{
+      width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#081321;
+      color:#fff;outline:none;font:inherit
+    }
+    select{appearance:auto}.select option{background:#081321;color:#fff}
+    textarea{min-height:135px;resize:vertical} input:focus,select:focus,textarea:focus{border-color:rgba(98,232,255,.6)}
+    .contact-info h3{font-size:1.55rem}.contact-info>p{color:var(--muted);margin-top:10px}
+    .contact-item{margin-top:24px}.contact-item small{color:var(--muted);display:block}.contact-item strong{font-size:1rem}
+    .contact-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+    .mini-link{padding:10px 13px;border:1px solid var(--line);border-radius:11px;color:#d7e4f1;font-size:.86rem}
+    .mini-link:hover{border-color:rgba(98,232,255,.35)}
     footer{padding:30px 0;border-top:1px solid var(--line);color:#7f90a6;font-size:.85rem}
     .footer-row{display:flex;justify-content:space-between;gap:20px}
-    @media(max-width:900px){.hero,.about,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.hero{padding-top:75px}.process{grid-template-columns:1fr}}
-    @media(max-width:650px){.navlinks{display:none}.menu{display:block}.grid{grid-template-columns:1fr}.cta{padding:35px;display:block}.cta .btn{margin-top:20px}.checks{grid-template-columns:1fr}.footer-row{display:block}.footer-row div+div{margin-top:8px}}
+    .footer-brand{display:flex;align-items:center;gap:8px}.footer-brand img{width:25px;height:25px;border-radius:7px;object-fit:cover}
+    .note{color:#71849b;font-size:.78rem;margin-top:12px}
+    @media(max-width:980px){
+      .hero,.split,.contact{grid-template-columns:1fr}.grid,.audience{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}
+      .hero{padding-top:75px}
+    }
+    @media(max-width:680px){
+      .navlinks{display:none}.menu{display:block}.grid,.audience,.process{grid-template-columns:1fr}
+      .cta{padding:35px;display:block}.cta .btn{margin-top:20px}.checks{grid-template-columns:1fr}
+      .footer-row{display:block}.footer-row>div+div{margin-top:10px}
+      .brand-text{font-size:1.18rem}.brand img{width:40px;height:40px}
+      h1{font-size:clamp(2.75rem,13vw,4rem)}
+    }
   </style>
 </head>
 <body>
 <header>
   <div class="container">
     <nav>
-      <a class="logo" href="#home">Sky<span>crawler</span></a>
-      <div class="navlinks">
-        <a href="#services">Services</a><a href="#about">About</a><a href="#process">How we work</a><a href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Let's talk</a>
+      <a class="brand" href="#home" aria-label="Sky Crawler home">
+        <img src="logo.jpg" alt="Sky Crawler logo">
+        <span class="brand-text">Sky<span>Crawler</span></span>
+      </a>
+      <div class="navlinks" id="navlinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">How We Work</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Free Consultation</a>
       </div>
       <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
     </nav>
@@ -92,23 +163,46 @@
 <main>
   <section class="hero container" id="home">
     <div>
-      <div class="eyebrow"><span class="dot"></span> Digital solutions. Real-world results.</div>
-      <h1>We build solutions that help businesses <span class="gradient">move forward.</span></h1>
-      <p>Skycrawler brings together digital marketing, customer support, product solutions, and elevator & lift solutions under one practical, customer-first brand.</p>
+      <div class="eyebrow"><span class="dot"></span> Business Support & Outsourcing Solutions</div>
+      <h1>Scale Your Business. <span class="gradient">We'll Handle the Support.</span></h1>
+      <p>Sky Crawler helps startups, SMEs and growing businesses streamline Recruitment, HR, Customer Support, Sales Support and Marketing operations through flexible outsourcing solutions.</p>
+      <div class="service-pills">
+        <span class="pill">Recruitment & HR</span>
+        <span class="pill">Customer Support</span>
+        <span class="pill">Sales & Lead Generation</span>
+        <span class="pill">Marketing Support</span>
+      </div>
       <div class="buttons">
-        <a class="btn btn-primary" href="#contact">Start a project →</a>
-        <a class="btn btn-secondary" href="#services">Explore services</a>
+        <a class="btn btn-primary" href="#contact">Get a Free Consultation →</a>
+        <a class="btn btn-secondary" href="#services">Explore Services</a>
       </div>
     </div>
     <div class="hero-card">
-      <div class="screen">
-        <div class="screen-top"><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span></div>
-        <div class="metric">
-          <div><b>360°</b><small>Business support</small></div>
-          <div><b>24/7</b><small>Customer focus</small></div>
+      <div class="logo-visual">
+        <img src="logo.jpg" alt="Sky Crawler brand logo">
+        <div class="visual-caption">
+          <b>Your Business Support Partner.</b>
+          <span>Recruit. Support. Sell. Scale.</span>
         </div>
-        <div class="bars">
-          <span class="bar" style="height:32%"></span><span class="bar" style="height:47%"></span><span class="bar" style="height:40%"></span><span class="bar" style="height:66%"></span><span class="bar" style="height:58%"></span><span class="bar" style="height:82%"></span><span class="bar" style="height:94%"></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Our role</div>
+        <h2>One partner. Multiple business solutions.</h2>
+        <p>Growing a business takes more than getting customers. You need the right people, consistent customer support, strong follow-ups and efficient day-to-day operations.</p>
+      </div>
+      <div class="panel">
+        <h3>Focus on growth. Let Sky Crawler support the operations.</h3>
+        <p>We help businesses outsource essential functions so internal teams can spend more time on their core goals.</p>
+        <div class="checks">
+          <div class="check">Flexible engagement models</div>
+          <div class="check">Cost-conscious support</div>
+          <div class="check">Clear communication</div>
+          <div class="check">Performance-focused execution</div>
         </div>
       </div>
     </div>
@@ -118,44 +212,98 @@
     <div class="container">
       <div class="section-head">
         <div class="kicker">What we do</div>
-        <h2>One partner. Multiple solutions.</h2>
-        <p>From getting customers through your door to supporting them after the sale, Skycrawler is designed to solve practical business problems.</p>
+        <h2>Support where your business needs it most.</h2>
+        <p>Choose one function or combine services into a support model built around your business requirements.</p>
       </div>
       <div class="grid">
-        <article class="card"><div class="icon">📣</div><h3>Digital Marketing</h3><p>Social media, content, campaigns, lead generation and digital growth strategies built around your goals.</p></article>
-        <article class="card"><div class="icon">🤝</div><h3>Customer Support</h3><p>Customer communication and support processes that improve satisfaction, retention and trust.</p></article>
-        <article class="card"><div class="icon">📦</div><h3>Product Solutions</h3><p>Help with product positioning, customer experience and practical solutions for growing businesses.</p></article>
-        <article class="card"><div class="icon">🛗</div><h3>Elevator & Lift</h3><p>Product and solution support for elevator and lift requirements, with a focus on reliability and customer needs.</p></article>
+        <article class="card">
+          <div class="icon">👥</div>
+          <h3>Recruitment & HR Solutions</h3>
+          <p>Build your team without carrying the entire recruitment workload.</p>
+          <ul>
+            <li>Candidate sourcing</li><li>Resume screening</li><li>Interview coordination</li><li>HR process support</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon">💬</div>
+          <h3>Customer Support</h3>
+          <p>Give customers faster, more consistent and professional support.</p>
+          <ul>
+            <li>Voice, chat & email</li><li>Query handling</li><li>Escalation support</li><li>Customer follow-ups</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon">📈</div>
+          <h3>Sales & Lead Generation</h3>
+          <p>Turn your sales pipeline into meaningful conversations and opportunities.</p>
+          <ul>
+            <li>Lead research</li><li>Lead qualification</li><li>Appointment setting</li><li>Sales follow-ups</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon">📣</div>
+          <h3>Marketing Support</h3>
+          <p>Extend your marketing capacity without building a large internal team.</p>
+          <ul>
+            <li>Social media assistance</li><li>Market research</li><li>Lead generation</li><li>Marketing coordination</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
   <section id="about">
-    <div class="container about">
-      <div class="about-panel">
-        <div class="kicker">Why Skycrawler</div>
-        <h3>Built to connect digital growth with real business needs.</h3>
-        <p>We believe businesses shouldn't need five different partners to solve five different problems. Skycrawler brings useful services together and keeps the experience simple.</p>
+    <div class="container split">
+      <div class="panel">
+        <div class="kicker">About Sky Crawler</div>
+        <h3>Built to make business support simpler.</h3>
+        <p>Sky Crawler is a business support and outsourcing venture helping startups, SMEs and growing businesses operate more efficiently.</p>
+        <p>We believe outsourcing should feel like adding an extension to your own team — not handing your business to a distant vendor.</p>
       </div>
       <div>
-        <div class="kicker">Our approach</div>
-        <h2>Simple thinking. Smart execution.</h2>
-        <p style="color:var(--muted);margin-top:17px">We start with the problem, understand the customer, choose the right solution, and measure what matters.</p>
+        <div class="kicker">Why Sky Crawler</div>
+        <h2>Practical support. Clear communication. Built to scale.</h2>
+        <p style="color:var(--muted);margin-top:17px">We first understand the requirement, then build the right workflow and support model around it.</p>
         <div class="checks">
-          <div class="check">Customer-first solutions</div><div class="check">Clear communication</div>
-          <div class="check">Practical execution</div><div class="check">Long-term relationships</div>
+          <div class="check">Customer-first solutions</div>
+          <div class="check">Flexible engagement</div>
+          <div class="check">Reliable communication</div>
+          <div class="check">Regular reporting</div>
+          <div class="check">Cost-conscious operations</div>
+          <div class="check">Scalable support</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Who we help</div>
+        <h2>Built for growing businesses.</h2>
+        <p>We support businesses that need additional capacity without immediately building every function in-house.</p>
+      </div>
+      <div class="audience">
+        <div class="audience-card"><h3>🚀 Startups</h3><p>Build your first team, support customers and create a consistent sales process.</p></div>
+        <div class="audience-card"><h3>🏢 SMEs</h3><p>Reduce operational workload without unnecessarily expanding internal teams.</p></div>
+        <div class="audience-card"><h3>🛒 E-commerce & D2C</h3><p>Manage customer queries, follow-ups and sales support as order volume grows.</p></div>
+        <div class="audience-card"><h3>🤝 Service Businesses</h3><p>Improve hiring, lead generation, follow-ups and customer communication.</p></div>
       </div>
     </div>
   </section>
 
   <section id="process">
     <div class="container">
-      <div class="section-head"><div class="kicker">How we work</div><h2>From idea to impact.</h2><p>A straightforward process designed to keep projects moving.</p></div>
+      <div class="section-head">
+        <div class="kicker">How we work</div>
+        <h2>Understand. Build. Execute. Improve.</h2>
+        <p>A straightforward process designed to keep business support clear and measurable.</p>
+      </div>
       <div class="process">
-        <div class="step"><div class="number">01</div><h3>Understand</h3><p>We learn about your business, customers, goals and the problem you want to solve.</p></div>
-        <div class="step"><div class="number">02</div><h3>Build</h3><p>We create a focused plan and execute the marketing, support or product solution.</p></div>
-        <div class="step"><div class="number">03</div><h3>Improve</h3><p>We review results, listen to customers and continuously improve the solution.</p></div>
+        <div class="step"><div class="number">01</div><h3>Understand</h3><p>We learn about your business, customers, current workflow, goals and challenges.</p></div>
+        <div class="step"><div class="number">02</div><h3>Plan</h3><p>We identify the right functions to outsource and create a practical support plan.</p></div>
+        <div class="step"><div class="number">03</div><h3>Execute</h3><p>We handle the agreed business functions according to the defined process.</p></div>
+        <div class="step"><div class="number">04</div><h3>Improve</h3><p>We review performance, share updates and continuously improve the workflow.</p></div>
       </div>
     </div>
   </section>
@@ -163,28 +311,77 @@
   <section>
     <div class="container">
       <div class="cta">
-        <div><div class="kicker">Let's build something better</div><h2>Have a business challenge?</h2><p>Tell Skycrawler what you're trying to achieve.</p></div>
-        <a class="btn btn-primary" href="#contact">Talk to Skycrawler →</a>
+        <div>
+          <div class="kicker">Let's build something better</div>
+          <h2>Have a business challenge?</h2>
+          <p>Tell us what you're trying to solve and let's discuss the right support model.</p>
+        </div>
+        <a class="btn btn-primary" href="#contact">Talk to Sky Crawler →</a>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="container">
-      <div class="section-head"><div class="kicker">Contact</div><h2>Let's start a conversation.</h2><p>Replace the placeholder details below with your real company information before publishing.</p></div>
+      <div class="section-head">
+        <div class="kicker">Contact</div>
+        <h2>Let's start a conversation.</h2>
+        <p>Tell us what your business needs. We'll use your enquiry to understand the requirement and discuss the next step.</p>
+      </div>
       <div class="contact">
         <form onsubmit="sendMessage(event)">
-          <label for="name">Name</label><input id="name" required placeholder="Your name">
-          <label for="email">Email</label><input id="email" type="email" required placeholder="you@example.com">
-          <label for="message">How can we help?</label><textarea id="message" required placeholder="Tell us about your requirement..."></textarea>
-          <button class="btn btn-primary" style="margin-top:18px;width:100%;cursor:pointer" type="submit">Send enquiry</button>
+          <label for="name">Full Name</label>
+          <input id="name" required placeholder="Your name" autocomplete="name">
+
+          <label for="email">Business Email</label>
+          <input id="email" type="email" required placeholder="you@company.com" autocomplete="email">
+
+          <label for="company">Company Name</label>
+          <input id="company" required placeholder="Your company" autocomplete="organization">
+
+          <label for="service">Service Required</label>
+          <select id="service" required>
+            <option value="">Select a service</option>
+            <option>Recruitment & HR</option>
+            <option>Customer Support</option>
+            <option>Sales & Lead Generation</option>
+            <option>Marketing Support</option>
+            <option>Other</option>
+          </select>
+
+          <label for="message">Tell us about your requirement</label>
+          <textarea id="message" required placeholder="What would you like Sky Crawler to help you with?"></textarea>
+
+          <button class="btn btn-primary" style="margin-top:18px;width:100%;cursor:pointer" type="submit">Request a Consultation →</button>
+          <div class="note">Submitting opens your email app with the enquiry details pre-filled.</div>
         </form>
+
         <div class="contact-info">
-          <h3>Skycrawler</h3><p>Digital Solutions for Everything.</p>
-          <div class="contact-item"><small>Email</small><strong>skycrawlerokay@gmail.com</strong></div>
-          <div class="contact-item"><small>Phone</small><strong>+91 8595139060</strong></div>
-          <div class="contact-item"><small>Location</small><strong>India</strong></div>
-          <p style="margin-top:28px;font-size:.88rem">These are starter placeholders. Update them with your verified business contact details before launch.</p>
+          <h3>Sky Crawler</h3>
+          <p>Business Support & Outsourcing Solutions.</p>
+
+          <div class="contact-item">
+            <small>Email</small>
+            <strong>skycrawlerokay@gmail.com</strong>
+          </div>
+
+          <div class="contact-item">
+            <small>Phone / WhatsApp</small>
+            <strong>+91 8595139060</strong>
+          </div>
+
+          <div class="contact-item">
+            <small>Location</small>
+            <strong>Delhi NCR, India</strong>
+          </div>
+
+          <div class="contact-links">
+            <a class="mini-link" href="mailto:skycrawlerokay@gmail.com">Email Us</a>
+            <a class="mini-link" href="https://wa.me/918595139060" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="mini-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+
+          <p class="note">For business enquiries, please include your company name, requirement and preferred contact details.</p>
         </div>
       </div>
     </div>
@@ -193,24 +390,57 @@
 
 <footer>
   <div class="container footer-row">
-    <div>© 2026 Skycrawler. All rights reserved.</div>
-    <div>Digital solutions for everything.</div>
+    <div class="footer-brand"><img src="logo.jpg" alt=""> <span>© 2026 Sky Crawler. All rights reserved.</span></div>
+    <div>Your Business Support Partner.</div>
   </div>
 </footer>
 
 <script>
 function toggleMenu(){
-  const n=document.querySelector('.navlinks');
-  n.style.display=n.style.display==='flex'?'none':'flex';
-  if(n.style.display==='flex'){
-    n.style.position='absolute';n.style.top='76px';n.style.left='0';n.style.right='0';
-    n.style.padding='20px';n.style.background='#081321';n.style.flexDirection='column';n.style.alignItems='stretch';
+  const n=document.getElementById('navlinks');
+  const isOpen=n.classList.toggle('open');
+  if(isOpen){
+    n.style.display='flex';
+    n.style.position='absolute';
+    n.style.top='78px';
+    n.style.left='0';
+    n.style.right='0';
+    n.style.padding='20px';
+    n.style.background='#081321';
+    n.style.flexDirection='column';
+    n.style.alignItems='stretch';
+    n.style.borderBottom='1px solid rgba(255,255,255,.10)';
+  } else {
+    n.style.display='';
+    n.style.position='';
+    n.style.top='';
+    n.style.left='';
+    n.style.right='';
+    n.style.padding='';
+    n.style.background='';
+    n.style.flexDirection='';
+    n.style.alignItems='';
+    n.style.borderBottom='';
   }
 }
 function sendMessage(e){
   e.preventDefault();
   const name=document.getElementById('name').value.trim();
-  alert(`Thanks, ${name}! Your enquiry form is working on the website demo. Connect it to your email/form service before launch.`);
+  const email=document.getElementById('email').value.trim();
+  const company=document.getElementById('company').value.trim();
+  const service=document.getElementById('service').value;
+  const message=document.getElementById('message').value.trim();
+
+  const subject=encodeURIComponent('Sky Crawler Enquiry — ' + service);
+  const body=encodeURIComponent(
+    'New enquiry for Sky Crawler\\n\\n' +
+    'Name: ' + name + '\\n' +
+    'Business Email: ' + email + '\\n' +
+    'Company: ' + company + '\\n' +
+    'Service: ' + service + '\\n\\n' +
+    'Requirement:\\n' + message
+  );
+  window.location.href='mailto:skycrawlerokay@gmail.com?subject='+subject+'&body='+body;
 }
 </script>
 </body>
